@@ -29,7 +29,7 @@ logic carry1;
 exp3_dsd uut(
    .a(a1),
    .b(b1),
-   .c1(c1),
+   .c(c1),
    .sum(sum1),
    .carry(carry1)
    );

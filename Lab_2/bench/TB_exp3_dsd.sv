@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 02/05/2025 12:36:15 PM
+// Create Date: 02/05/2025 01:15:53 PM
 // Design Name: 
-// Module Name: TB__exp3_DSD
+// Module Name: TB_exp3_dsd
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,11 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-
-module TB__exp3_DSD;
+module TB__exp3_dsd;
 reg a,b,c;
 wire x,y;
-exp3_DSD uut(
+exp3_dsd uut(
   .a(a),
   .b(b),
   .c(c),
@@ -56,6 +55,4 @@ exp3_DSD uut(
   
 
 
-  
-
-endmodule
+ endmodule

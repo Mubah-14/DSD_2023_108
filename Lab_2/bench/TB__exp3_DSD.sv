@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 02/05/2025 11:04:31 AM
+// Create Date: 02/05/2025 12:36:15 PM
 // Design Name: 
 // Module Name: TB__exp3_DSD
 // Project Name: 
@@ -20,10 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
+
 module TB__exp3_DSD;
 reg a,b,c;
 wire x,y;
-exp3_DSD(
+exp3_DSD uut(
   .a(a),
   .b(b),
   .c(c),
@@ -56,4 +57,5 @@ exp3_DSD(
 
 
   
+
 endmodule

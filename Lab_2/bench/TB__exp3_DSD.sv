@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 02/05/2025 02:41:08 PM
+// Create Date: 02/05/2025 12:36:15 PM
 // Design Name: 
-// Module Name: exp2_dsd
+// Module Name: TB__exp3_DSD
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,13 +20,42 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module exp2_dsd(
-   input logic a,
-   input logic b,
-   input logic c,
-   output logic sum,
-   output logic carry );
- assign sum=(a^b)^c;
- assign carry=(a&b)|(c&(a^b));
-    
+
+module TB__exp3_DSD;
+reg a,b,c;
+wire x,y;
+exp3_DSD uut(
+  .a(a),
+  .b(b),
+  .c(c),
+  .x(x),
+  .y(y));
+ initial begin
+ a=0;b=0;c=0;
+ #10
+ a=0;b=0;c=1;
+ #10
+ a=0;b=1;c=0;
+ #10
+ a=0;b=1;c=1;
+ #10
+ a=1;b=0;c=0;
+ #10
+ a=1;b=0;c=1;
+ #10
+ a=1;b=1;c=0;
+ #10
+ a=1;b=1;c=1;
+ #10
+ $finish;
+ end
+ 
+ 
+ 
+  
+  
+
+
+  
+
 endmodule
